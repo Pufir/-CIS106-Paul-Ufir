@@ -1,0 +1,12 @@
+name = input("Student last name")
+
+t1 = float(input("Enter First test grade"))
+
+t2 = float(input("Enter Second test grade"))
+
+
+a = t1 + t2
+
+d = a / 2
+
+print(name, "average is: ", d)
