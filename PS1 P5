@@ -1,0 +1,7 @@
+Item = float(input("Price for Item: "))
+
+tax = Item * .07 
+
+Total = tax + Item
+
+print("The total is ", Total)
