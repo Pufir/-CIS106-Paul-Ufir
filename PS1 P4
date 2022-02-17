@@ -1,0 +1,5 @@
+M1 = float(input("Meal Cost: "))
+
+Tip = M1 * .15
+
+print("Tip is: ", Tip)
