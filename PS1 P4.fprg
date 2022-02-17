@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-17 03:51:15 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLURCQTBBQjc7MjAyMi0wMi0xNzswMzo0MToyOCBQTTszMjg2"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLURCQTBBQjc7MjAyMi0wMi0xNzswMzo1MToxNSBQTTsxOzMzOTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="M1" type="Real" array="False" size=""/>
+            <declare name="tip" type="Real" array="False" size=""/>
+            <output expression="&quot;Meal cost: &quot;" newline="True"/>
+            <input variable="M1"/>
+            <assign variable="Tip" expression="M1 * 0.15"/>
+            <output expression="&quot;Tip is: &quot; &amp; tip" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

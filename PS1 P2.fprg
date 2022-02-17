@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-17 03:20:21 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLURCQTBBQjc7MjAyMi0wMi0xNzswMzowMDoxMCBQTTszMjcy"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLURCQTBBQjc7MjAyMi0wMi0xNzswMzoyMDoyMSBQTTsxOzMzODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="n1" type="Real" array="False" size=""/>
+            <declare name="n2" type="Real" array="False" size=""/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="d" type="Real" array="False" size=""/>
+            <output expression="&quot;Student Last name: &quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter First test grade: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Enter Second test grade: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="a" expression="n1 + n2"/>
+            <assign variable="d" expression="a / 2"/>
+            <output expression="name &amp; &quot; average is: &quot; &amp; d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

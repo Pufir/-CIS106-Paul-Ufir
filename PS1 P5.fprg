@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-17 03:55:04 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLURCQTBBQjc7MjAyMi0wMi0xNzswMzo1MjoyMiBQTTszMjgy"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLURCQTBBQjc7MjAyMi0wMi0xNzswMzo1NTowNCBQTTsxOzMzOTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Item" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;Price for Item: &quot;" newline="True"/>
+            <input variable="Item"/>
+            <assign variable="tax" expression="Item * 0.07"/>
+            <assign variable="total" expression="tax + Item"/>
+            <output expression="&quot;The total is: &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
