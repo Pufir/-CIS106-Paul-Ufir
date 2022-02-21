@@ -1,0 +1,7 @@
+Q = float(input("Enter the quantity: " ))
+
+Ppu = float(input("Enter the price per unit: " ))
+
+ePrice = (Q * Ppu)
+
+print("Extended Price is: ", ePrice)
