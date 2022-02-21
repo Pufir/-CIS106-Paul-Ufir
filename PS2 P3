@@ -1,0 +1,11 @@
+length = float(input("The length is: "))
+
+width = float(input("The width is: "))
+
+area = length * width 
+
+circumference = (2 * length) + (2 * width)
+
+print("The area is: ", area)
+
+print("The circumfrence is: ", circumference)
