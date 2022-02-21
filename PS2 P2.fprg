@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-03 02:07:54 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUEzNlJQU0Q7MjAyMS0xMC0wMzswMjowMTozNyBBTTszMzA5"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUEzNlJQU0Q7MjAyMS0xMC0wMzswMjowNzo1NCBBTTsxOzM0MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="hours" type="Integer" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="gPay" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter last name: &quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter hours work: &quot;" newline="True"/>
+            <input variable="hours"/>
+            <output expression="&quot;Enter pay rate: &quot;" newline="True"/>
+            <input variable="rate"/>
+            <assign variable="gPay" expression="hours * rate"/>
+            <output expression="name &amp; &quot; Gross pay is: &quot; &amp; gPay" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
