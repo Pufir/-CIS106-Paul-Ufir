@@ -1,0 +1,11 @@
+item = float(input("Enter the price of the item: ")) 
+
+discount = float(input("Enter the discount in decimal form: "))
+
+dAmount = item * discount
+
+total = item - dAmount 
+
+print("The discount amount was: ", dAmount)
+
+print("The final price is: ", total)
