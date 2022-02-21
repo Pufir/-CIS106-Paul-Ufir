@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-03 01:53:26 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUEzNlJQU0Q7MjAyMS0xMC0wMzswMToyNTo1MiBBTTszMzEx"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUEzNlJQU0Q7MjAyMS0xMC0wMzswMTo1MzoyNiBBTTsxOzM0MjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="q" type="Real" array="False" size=""/>
+            <declare name="Ppu" type="Real" array="False" size=""/>
+            <declare name="ePrice" type="Real" array="False" size=""/>
+            <output expression="&quot;enter the quantity&quot;" newline="True"/>
+            <input variable="q"/>
+            <output expression="&quot;Enter the Price Per Unit&quot;" newline="True"/>
+            <input variable="Ppu"/>
+            <assign variable="ePrice" expression="q * Ppu"/>
+            <output expression="&quot;Total extended price is: &quot; &amp; ePrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
