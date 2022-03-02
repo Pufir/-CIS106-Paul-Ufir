@@ -1,0 +1,17 @@
+item = float(input("Enter the quantity of the item: "))
+
+if item >= 1000:
+  price = 3.00 
+else:
+  price = 5.00
+
+extprice = item * price 
+
+tax = extprice * .007
+
+total = extprice + tax 
+
+print("The quantity is: ",item)
+print("Extended price is: ", extprice)
+print("Tax is: ", tax)
+print("The total is: ", total)

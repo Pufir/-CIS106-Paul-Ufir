@@ -1,0 +1,16 @@
+qyt = float(input("Enter the amount of books: "))
+
+cost = float(input("Enter the cost per book: "))
+
+total = qyt * cost
+
+if total >= 50.00: 
+  shipping = 0
+else:
+  shipping = 25.00
+
+Ototal = total + shipping
+
+print("Total is: ", total)
+print("Shipping is: ", shipping)
+print("Total with shipping is: ", Ototal)
