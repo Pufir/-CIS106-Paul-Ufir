@@ -1,0 +1,18 @@
+part = int(input("Enter the part number: "))
+
+qty = input ("Enter quantity to purchase: ")
+
+if part == 10 or part == 55: 
+  unitprice = 1.00 
+elif part == 90: 
+  unitprice = 2.00
+elif part == 70 or part == 80: 
+  unitprice = 3.00
+else: 
+  unitprice = 5.00 
+
+total = float(qty) * unitprice
+
+print("Part number is: ", part)
+print("Unit price is: ", unitprice)
+print("Total is: ", total)

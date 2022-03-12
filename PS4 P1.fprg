@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-18 01:43:18 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZVRDAxNzE7MjAyMS0xMC0xODswMToxNjo0NSBBTTszMjQ0"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZVRDAxNzE7MjAyMS0xMC0xODswMTo0MzoxOCBBTTsxOzMzNTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qty" type="Integer" array="False" size=""/>
+            <declare name="ExtP" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the Quantity: &quot;" newline="True"/>
+            <input variable="qty"/>
+            <if expression="qty &gt; 10000">
+                <then>
+                    <assign variable="price" expression="10"/>
+                </then>
+                <else>
+                    <if expression="qty &gt;= 5000 and qty &lt; 10000">
+                        <then>
+                            <assign variable="price" expression="20"/>
+                        </then>
+                        <else>
+                            <if expression="qty &lt; 5000">
+                                <then>
+                                    <assign variable="price" expression="30"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="ExtP" expression="qty * price"/>
+            <assign variable="tax" expression="ExtP * 0.07"/>
+            <assign variable="total" expression="tax + ExtP"/>
+            <output expression="&quot;Extended price is: &quot; &amp; ExtP" newline="True"/>
+            <output expression="&quot;Tax is: &quot; &amp; tax" newline="True"/>
+            <output expression="&quot;The total is: &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

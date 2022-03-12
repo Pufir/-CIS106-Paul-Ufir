@@ -1,0 +1,17 @@
+principle = float(input("Enter principle amount: "))
+years = float(input("Enter the amount of years: "))
+
+if principle > 100000.00 and years == 5:
+ rate = 0.06
+elif principle >= 50000.00 and years == 10:
+  rate = 0.05
+elif principle >= 50000.00 and years == 5:
+  rate = 0.04
+else:
+  rate = 0.02
+
+fyi = principle * rate
+
+print(principle)
+print(rate)
+print(fyi)

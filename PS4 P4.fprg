@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-18 03:53:07 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZVRDAxNzE7MjAyMS0xMC0xODswMzozNTo1MyBBTTszMjQ2"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZVRDAxNzE7MjAyMS0xMC0xODswMzo1MzowNyBBTTsxOzMzNTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tickets" type="Integer" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <input variable="tickets"/>
+            <if expression="tickets &gt;= 25">
+                <then>
+                    <assign variable="price" expression="50.0"/>
+                </then>
+                <else>
+                    <if expression="tickets &gt;= 10 and tickets &lt; 25">
+                        <then>
+                            <assign variable="price" expression="60.0"/>
+                        </then>
+                        <else>
+                            <if expression="tickets &gt;= 5 and tickets &lt; 10">
+                                <then>
+                                    <assign variable="price" expression="70.0"/>
+                                </then>
+                                <else>
+                                    <assign variable="price" expression="75.0"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="tickets * price"/>
+            <output expression="tickets" newline="True"/>
+            <output expression="price" newline="True"/>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

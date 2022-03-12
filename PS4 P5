@@ -1,0 +1,15 @@
+name = input("Last name: ")
+salary = float(input("Salary: "))
+level = float(input("Job level: "))
+
+if level >= 10: 
+  rate = .25
+elif level >= 5 and level < 10: 
+  rate = .20
+else: 
+  rate = .10 
+
+bonus = salary * rate 
+
+print(name)
+print("Bonus: ",bonus)

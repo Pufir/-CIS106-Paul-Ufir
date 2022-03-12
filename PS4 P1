@@ -1,0 +1,20 @@
+Qty = int(input("Enter the Quantity: "))
+
+if (Qty) > 10000: 
+  price = 10
+elif (Qty) >= 5000 and (Qty) < 10000:
+  price = 20
+elif (Qty) <5000:
+  price = 30
+
+ExtP = Qty * price
+
+tax = ExtP * 0.07
+
+total = tax + ExtP
+
+print("Extended price is: ", ExtP)
+
+print("Tax is: ", tax)
+
+print("Total is: ", total)
