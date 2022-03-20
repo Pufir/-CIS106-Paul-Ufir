@@ -1,0 +1,23 @@
+program = input("would you like to start the program, yes or no: ")
+
+counter = 0
+
+totalex1 = 0.0
+
+while program == "yes":
+  counter = counter + 1
+  name = (input("Student last name: "))
+  score1 = float(input("Enter the first exam score: "))
+  score2 = float(input("Enter the second exam score: "))
+  avg = (score1 + score2 )/ 2
+  print(name, "has the average score of: ", avg)
+  totalex1 = totalex1 + 1
+  program = input("Would you like to start the program, yes or no: ")
+
+
+
+
+
+avgex1 = totalex1 /counter 
+print("Number of students: ", counter)
+print("Average exam score: ", avgex1)

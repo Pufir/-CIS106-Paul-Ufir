@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-25 02:46:58 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTdKUUUwMlM7MjAyMS0xMC0yNTswMjoxNDo0NSBQTTszMzA4"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTdKUUUwMlM7MjAyMS0xMC0yNTswMjo0Njo1OCBQTTsxOzM0MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="program" type="String" array="False" size=""/>
+            <declare name="counter" type="Real" array="False" size=""/>
+            <assign variable="counter" expression="0"/>
+            <declare name="totalex1" type="Real" array="False" size=""/>
+            <assign variable="totalex1" expression="0"/>
+            <declare name="avgex1" type="Real" array="False" size=""/>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="score1" type="Real" array="False" size=""/>
+            <declare name="score2" type="Real" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <output expression="&quot;Would you like to start the program yes or no?: &quot;" newline="True"/>
+            <input variable="program"/>
+            <while expression="program == &quot;yes&quot;">
+                <assign variable="counter" expression="counter + 1"/>
+                <output expression="&quot;Enter the last name: &quot;" newline="True"/>
+                <input variable="lastname"/>
+                <output expression="&quot;Enter the score for the first exam: &quot;" newline="True"/>
+                <input variable="score1"/>
+                <output expression="&quot;Enter the score for the second exam: &quot;" newline="True"/>
+                <input variable="score2"/>
+                <assign variable="avg" expression="(score1 + score2) / 2"/>
+                <assign variable="totalex1" expression="totalex1 + score1"/>
+                <output expression="lastname &amp; &quot;has the average of: &quot; &amp; avg" newline="True"/>
+                <output expression="&quot;Would you like to start the program, yes or no?: &quot;" newline="True"/>
+                <input variable="program"/>
+            </while>
+            <output expression="&quot;toal number of students: &quot; &amp; counter" newline="True"/>
+            <assign variable="avgex1" expression="totalex / counter"/>
+        </body>
+    </function>
+</flowgorithm>

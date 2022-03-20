@@ -1,0 +1,25 @@
+counter = 0
+gpa = 0
+program = input("would you like to start the program, yes or no?: ")
+
+
+if program == "yes":
+  while (program == "yes"):
+    counter = counter + 1
+    lastname = input('What is your last name?: ')
+    hours = float(input("How many hours have you worked?: ")) 
+    rop = float(input('What is your rate of pay?: '))
+    if hours >= 40:
+      gp = hours * 1.5 * rop
+    else:
+      gp = hours * rop
+    print('{} earned {}'.format(lastname,gp))
+    gpa += gp
+    program = input("would you like to start the program, yes or no?: ")
+elif program == 'no':
+  pass
+
+
+print("Number of emplooyes: ", counter)
+print("Sum of all Gross pay: ", gpa)
+print("average pay of all employees: {}".format(gpa/counter))
