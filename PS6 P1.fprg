@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-31 03:34:53 AM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVNETFFBMFQ7MjAyMS0xMC0zMTswMzoxMDo1OSBBTTszMzM3"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVNETFFBMFQ7MjAyMS0xMC0zMTswMzozNDo1MyBBTTsxOzM0NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="i" type="Real" array="False" size=""/>
+            <declare name="p" type="Real" array="False" size=""/>
+            <declare name="ir" type="Real" array="False" size=""/>
+            <declare name="eb" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the principle amount: &quot;" newline="True"/>
+            <input variable="p"/>
+            <output expression="&quot;Enter the interest rate amount: &quot;" newline="True"/>
+            <input variable="ir"/>
+            <for variable="count" start="1" end="5" direction="inc" step="1">
+                <assign variable="i" expression="p * ir"/>
+                <assign variable="eb" expression="p + i"/>
+                <output expression="count &amp; &quot;  &quot; &amp; p &amp; &quot;  &quot; &amp; eb" newline="True"/>
+                <assign variable="p" expression="eb"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
