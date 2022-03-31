@@ -1,0 +1,25 @@
+def tuition(hrs, code):
+  if code == "I": 
+   total = float(hrs) * 250 
+  elif code == "O":
+   total = float(hrs) * 550
+  
+
+  return total
+
+
+
+
+
+
+name = input("Enter student's last name: ")
+
+hrs = float(input("Enter credit hours: "))
+
+code = input("Enter district code(code I or Code O): ")
+
+total = tuition(hrs,code)
+
+print("Student's last name: ", name)
+
+print("tuition owed: ", total)

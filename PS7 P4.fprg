@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-07 10:40:35 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVVPNUtGOUc7MjAyMS0xMS0wNzsxMDoxNjoyNiBQTTszMzM5"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVVPNUtGOUc7MjAyMS0xMS0wNzsxMDo0MDozNSBQTTsxOzM0NDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="job" type="String" array="False" size=""/>
+            <declare name="hrs" type="Real" array="False" size=""/>
+            <declare name="pay" type="Real" array="False" size=""/>
+            <declare name="gross" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter last name: &quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter job code (L, A, J): &quot;" newline="True"/>
+            <input variable="job"/>
+            <output expression="&quot;Enter the amount of hours worked: &quot;" newline="True"/>
+            <input variable="hrs"/>
+            <call expression="pay(job)"/>
+            <assign variable="pay" expression="pay(job)"/>
+            <call expression="grossP(pay, hrs)"/>
+            <assign variable="gross" expression="grossP(pay, hrs)"/>
+            <output expression="&quot;Last name: &quot; &amp; name" newline="True"/>
+            <output expression="&quot;Gross pay: &quot; &amp; gross" newline="True"/>
+        </body>
+    </function>
+    <function name="grossP" type="Real" variable="gross">
+        <parameters>
+            <parameter name="pay" type="Real" array="False"/>
+            <parameter name="hrs" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="gross" type="Real" array="False" size=""/>
+            <declare name="wage" type="Real" array="False" size=""/>
+            <declare name="overtimehrs" type="Real" array="False" size=""/>
+            <if expression="hrs &gt; 40">
+                <then>
+                    <assign variable="overtimehrs" expression="hrs - 40"/>
+                    <assign variable="wage" expression="overtimehrs + (pay * 0.5)"/>
+                    <assign variable="gross" expression="pay * hrs + wage"/>
+                </then>
+                <else>
+                    <assign variable="gross" expression="pay * hrs"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="pay" type="Real" variable="pay">
+        <parameters>
+            <parameter name="job" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="pay" type="Real" array="False" size=""/>
+            <if expression="job == &quot;L&quot;">
+                <then>
+                    <assign variable="pay" expression="25"/>
+                </then>
+                <else>
+                    <if expression="job == &quot;A&quot;">
+                        <then>
+                            <assign variable="pay" expression="30"/>
+                        </then>
+                        <else>
+                            <if expression="job == &quot;J&quot;">
+                                <then>
+                                    <assign variable="pay" expression="50"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

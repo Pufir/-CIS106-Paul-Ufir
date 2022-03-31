@@ -1,0 +1,41 @@
+def pay(job): 
+  if job == "L":
+    pay = 25 
+  elif job == "A": 
+    pay = 30 
+  elif job == "J": 
+    pay = 50 
+
+  return pay 
+
+
+def grossP(pay, hrs): 
+
+  if hrs > 40: 
+   overtimehrs = float(hrs) - 40
+   wage = float(overtimehrs) + float(pay *.5) 
+   gross= float(pay)* float(hrs) + float(wage)
+  else:
+    gross = float(pay) * float(hrs)
+
+
+  
+  return gross
+
+
+
+name = input("Enter Last name: ")
+
+job = input("Enter job code( L, A, J): ")
+
+hrs = float(input("Enter the amount of hours worked: "))
+
+pay = pay(job)
+
+gross = grossP(pay,hrs)
+
+
+
+print("Last name: ", name)
+
+print("gross pay: ", gross)

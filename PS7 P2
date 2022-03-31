@@ -1,0 +1,20 @@
+def hitstotal(hits, bats):
+
+  avg = float(hits) / float(bats)
+  
+   
+
+  return avg
+
+
+name = input("Enter last name: ")
+
+hits = float(input("Number of hits: "))
+
+bats = float(input("Number of bats: "))
+
+avg = hitstotal(hits,bats)
+
+print("Name: ", name)
+
+print("Batting average is: ", avg)

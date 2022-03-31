@@ -1,0 +1,28 @@
+def avgmpg(miles, gallons): 
+  mpg = float(miles) / float(gallons)
+
+
+
+  return mpg
+
+def total(gallons): 
+  cost = float(gallons) * 2.50
+
+  return cost
+
+
+City = input("Enter the destination city: ")
+
+miles = float(input("Enter the amount of miles traveled: "))
+
+gallons = float(input("Enter the amount of gallons used: "))
+
+mpg = avgmpg(miles,gallons)
+
+cost = total(gallons)
+
+print("Destination city: ", City)
+
+print("MPG: ", mpg)
+
+print("The cost of gas: $", cost)
