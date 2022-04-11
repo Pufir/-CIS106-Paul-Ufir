@@ -1,0 +1,25 @@
+def square(length, width, height): 
+
+  square = (2 * float(length) * float(width)) + (2 * float(length) * float(height)) + (2 * float(width) * float(height))
+
+  gallons = square / 50 
+
+  return gallons 
+
+
+
+
+
+
+start = input("Would you like to start the program(Yes or No): ")
+
+
+while start == "Yes": 
+  length = float(input("Enter lenght: "))
+  width = float(input("Enter the width: "))
+  height = float(input("Enter the height: "))
+  gallons = square(length, width, height )
+  print("Gallons: ", gallons )
+  start = input("Would you like to start the program(Yes or No): ")
+else:  
+  print("See you next time!")

@@ -1,0 +1,26 @@
+def ticket(lastname, miles):
+  if miles >= 30: 
+    price = 12 
+  elif miles >= 20 and miles < 30: 
+    price = 10
+  elif miles >= 10 and miles < 20: 
+    price = 8 
+  else:
+    price = 5 
+
+  return price 
+
+
+
+start = input("Would you like to start the program(Yes or No): ")
+
+while start == "Yes": 
+  lastname = input("Last name: ")
+  miles = float(input("Miles from downtown chicago: "))
+  number = float(input("Number of people: "))
+  price = ticket(lastname, miles)
+  total = price * number 
+  print("price: ", total)
+  start = input("Would you like to start the program(Yes or No): ")
+else: 
+  print("See you next time! ")

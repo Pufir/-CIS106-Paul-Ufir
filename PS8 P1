@@ -1,0 +1,29 @@
+def forecast(month, sales):
+  if month == "Jan" or month == "Feb" or month == "Mar":
+    percent = 0.10
+  elif month == "Apr" or month == "May" or month == "Jun":
+    percent = 0.15
+  elif month == "Jul" or month == "Aug" or month == "Sep":
+    percent = 0.20
+  elif month == "Oct" or month == "Nov" or month == "Dec": 
+    percent = 0.25
+  ototal = float(sales) * percent
+  ntotal = float(sales) + ototal
+  return ntotal
+
+
+start = input("Would you like to start the program(Yes or No): ")
+
+
+while start == "Yes": 
+  lastname = input("Enter Lastname: ")
+  month = input("Enter month: ")
+  sales = float(input("Enter sales for that month: "))
+  ntotal = forecast(month, sales)
+  print("Lastname: ", lastname)
+  print("Next month sale: ", ntotal)
+  start = input("Would you like to start the program(Yes or No): ")
+else: 
+  print("See you next time!")
+
+  

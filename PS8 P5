@@ -1,0 +1,26 @@
+def value(county, market): 
+  if county == "cook":
+    percent = 0.90
+  elif county == "dupage": 
+    percent = 0.80
+  elif county == "mchenry": 
+    percent = 0.75 
+  elif county == "kane": 
+    percent = 0.60 
+  else: 
+    percent = 0.70 
+  total = (market * percent) + market 
+
+  return total 
+
+
+start = input("Would you like to start the program(Yes or No): ")
+
+while start == "Yes": 
+  county = input("Enter the county your looking for: ")
+  market = float(input("Enter the amount your willing to spend: "))
+  total = value(county, market)
+  print(total)
+  start = input("Would you like to start the program(Yes or No): ")
+else: 
+  print("See you next time!")
