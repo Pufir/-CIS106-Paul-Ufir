@@ -1,0 +1,32 @@
+highest = 0
+lowest = 999
+hindex = 0  
+lindex = 0
+names = []
+scores = []
+lst = []
+
+def highLow(nameScore):
+  global hindex
+  global lindex
+  inf = open('nameScore','r')
+  content = inf.readlines()
+  inf.close()
+
+  for i in content:
+    lst.append(i.rstrip('\n'))
+
+  for i in lst:
+    names.append(i[0:-2])
+    scores.append(str(i[-2] + str(i[-1])))
+
+  for i in scores:
+    if int(i) < lowest:
+      lowest == int(i)
+      lindex = scores.index(i)
+    elif int(i) > highest:
+      highest == int(i)
+      hindex = scores.index(i)
+
+  print('The highest score was {} by {}'.format(scores[int(hindex)],names[int(hindex)]))
+  print('The lowest score was {} by {}'.format(scores[int(lindex)],names[int(lindex)]))

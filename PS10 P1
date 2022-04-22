@@ -1,0 +1,10 @@
+def num(name): 
+  for n in name: 
+    print(n)
+ 
+def num2(name):
+  name.reverse()
+  for n in name: 
+    print(n)
+
+name = ["Ufir", "Tom", "Henry","Paul","Adam","Sam","Tami","Andre","Quan","Jose"]

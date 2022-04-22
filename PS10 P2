@@ -1,0 +1,19 @@
+def num(name): 
+  for n in name: 
+    print(n)
+
+def num2(name):
+  name.reverse()
+  for n in name: 
+    print(n)
+
+def score(exam,name):
+  index = 0 
+  score = 0  
+  for e in name: 
+    score = exam[index]
+    index += 1 
+    print("{} got {}".format(e, score))
+
+name = ["Ufir", "Tom", "Henry","Paul","Adam","Sam","Tami","Andre","Quan","Jose"]
+exam = ["90", "85", "89", "72", "75", "79", "83", "81", "70", "77"]

@@ -1,0 +1,22 @@
+
+def pbat(file):
+  inf = open(file)
+  content = inf.readlines()
+  inf.close()
+
+  ln = []
+  ba = []
+
+  for i in content:
+    s = i.split()
+    ln.append(s[0])
+    ba.append(s[1])
+
+  while True:
+    name = input("enter a last name: ")
+    for i in ln:
+      if name == i:
+        place = ln.index(i)
+        print(ba[place])
+    if name not in ln:
+      print("Name not found")
