@@ -1,0 +1,23 @@
+total = 0 
+avg = 0
+
+def average(First, Second, Third):
+  global total
+  global avg
+  total = float(First) + float(Second) + float(Third)
+  
+  avg = total / 3 
+  return avg, total 
+
+
+
+name = input("Enter students last name: ")
+First = float(input("First exam score: "))
+Second = float(input("Second exam score: "))
+Third = float(input("Third exam score: "))
+
+average(First, Second, Third)
+
+print("Last name: ", name)
+print("total points: ", total)
+print("Average score: ", avg)

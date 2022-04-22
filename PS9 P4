@@ -1,0 +1,26 @@
+avg = 0 
+avgHandicap = 0 
+
+def average(First, Second, Third, Handicap):
+  global avg
+  global avgHandicap
+
+  total = float(First) + float(Second) + float(Third) 
+  avg = total / 3 
+  avgHandicap = avg / Handicap
+
+  return avg, avgHandicap 
+
+
+name = input("Enter bowler last name: ")
+First = float(input("Enter first game score: "))
+Second = float(input("Enter second game score: "))
+Third = float(input("Enter third game score: "))
+Handicap = float(input("Enter Handicap percent: "))
+
+average(First, Second, Third, Handicap)
+
+
+print("Lastname: ", name)
+print("average: ", avg)
+print("average with handicap", avgHandicap)

@@ -1,0 +1,27 @@
+First  = 0 
+Second = 0 
+
+
+def commision(sales):
+  global First 
+  global Second 
+  
+  if sales >= 100000: 
+    percent = .10
+  else:
+    percent = 0.05
+  
+  First = float(sales) * percent
+  Second = First * 0.05
+
+  return First, Second
+
+
+name = input("Enter last name: ")
+sales = float(input("Enter sales: "))
+
+commision(sales)
+
+print("Last name: ", name)
+print("This year sales: ", First)
+print("Next year sales: ", Second)

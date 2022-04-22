@@ -1,0 +1,28 @@
+A = 0 
+Dprice = 0 
+
+def amount(q,p,d):
+  global A
+  global Dprice
+
+  A = float(q) / float(p)
+
+  Dprice = float(p) - A
+
+
+  return Dprice, A
+
+
+
+q = float(input("Enter quantity of item: ")) 
+p = float(input("Enter price: ")) 
+d = float(input("Enter discounted percent: "))
+amount(q,p,d)
+ 
+ 
+
+print("Quantity: ", q) 
+print("Original price:", p) 
+print("Discounted Rate: ", d) 
+print("Discount amount: ", A) 
+print("Discounted price: ", Dprice) 
