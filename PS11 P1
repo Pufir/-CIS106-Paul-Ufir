@@ -1,0 +1,90 @@
+n =
+int(input("Number of items for your list: "))
+  for n in range(0,n,1):
+    s = int(input("Enter number: "))
+    nlist.append(s)
+  return nlist 
+def displaylist(nlist):
+  for item in nlist: 
+    print(item)
+
+nlist = []
+nlist = test(nlist)
+displaylist(nlist)
+print(nlist)
+
+
+#2 Insert the score of 99 at position 1 within the list. Display the updated list.
+nlist.insert(0,99)
+print(nlist)
+
+#3 Replace the value of 99 with the value 100. Display the updated list.  
+nlist[0] = 100
+print(nlist)
+
+#4 Create a second list with the values 500, 600, 700, 800, 900. Display this list. Extend the first list with this second list. Display the first list. 
+
+lst2 = [500, 600, 700, 800, 900]
+print(lst2)
+lst3 = lst2 + nlist
+print(lst3)
+print(nlist)
+#5 Remove the value 800 from the first list. Display the first list. 
+lst2.remove(800)
+print(lst2)
+
+#6 Remove the third item from the first list. Display the first list. 
+
+lst2.remove(lst2[2])
+print(lst2)
+
+#7 Create a list of grades: grades =["A", "B", "C", "A", "A", "C"]
+
+grades = ["A", "B", "C", "A", "A", "C"]
+
+#8 Display a count of the number of A grades. 
+counter = 0
+for i in grades:
+  if i == 'A':
+    counter += 1
+print(counter)
+
+#9 Display the index (position) of the first B grade. 
+
+for i in grades: 
+  if i == "B":
+    print(grades.index(i))
+
+#10 Look for grade of F in the grades list. Display a message that F is not in the list. (Do not let the code generate an error). 
+if "F" in grades:
+  print(grades.index("F"))
+elif " F " not in grades:
+  print("F is not in list. ")
+    
+    
+#11 Clear (but do not delete) the second list of integers. Display the list. 
+
+print("I did this step but put it back")
+
+#12 Delete the second list. Try to display it. (should get an error because the list no longer exists. 
+
+print("Deleted it and put it back to show work. I did get a eror although. ")
+
+#13 Create a list of players in this order (“Rizzo”, “Davis”, “Baez”, “Happ”, “Bryan”)
+
+players = ["Rizzo", "Davis", "Baez", "Happ", "Bryan"]
+
+#14 Sort the list of players. Display the sorted list. 
+
+players.sort()
+print(players)
+
+#15 Make a copy of the list of players called players2. Display players2.
+
+players2 = players
+print(players2)
+
+#16 Reverse the order of players2. Display players, then display players2. 
+
+players2.reverse()
+print(players2)
