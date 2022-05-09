@@ -1,0 +1,50 @@
+# number 1 
+def name():
+  names = input("Enter your first name followed by your last name: ")
+  nameslst = names.split()
+  first = nameslst[0]
+  last = nameslst[-1]
+  first.split()
+  if len(nameslst) != 2:
+    return 'Invalid Name'
+  return last + ', ' + first[0]
+
+
+
+#number 2 
+def line(): 
+  line = str(input("Enter the sentence: "))
+  fl = []
+  for i in line:
+    for item in i:
+      fl.append(item)
+  fl.reverse()
+  print(''.join(fl))    
+
+
+
+#number 3 
+
+def scores(): 
+  scores = str(input("Enter Test Scores: "))
+  fl = [","]
+  for i  in scores:
+    for item in i: 
+    fl.append(item)
+    print(''. join(fl))
+
+#Create a program that asks the user for a line of text. Then ask the user for the number of characters to print in each line, the number of lines to be printed, and a scroll direction, right or left. Using the given line of text, duplicate the text as needed to fill the given number of characters per line. Then print the requested number of lines, shifting the entire line's content by one character, left or right, each time the line is printed. The first or last character will be shifted / appended to the other end of the string. For example, if shifting the line to the left:
+ #   Repeat this. Repeat this. 
+#  epeat this. Repeat this. R
+   # peat this. Repeat this. Re
+#Or if shifting the line to the right:
+  #  Repeat this. Repeat this. 
+  #   Repeat this. Repeat this.
+   # . Repeat this. Repeat this
+def text():
+  text = str(input("Enter a line of text: "))
+  num = 
+  for i in num: 
+    for item in i: 
+      fl.append(item)
+      print("number of characters are: ", join(fl))
