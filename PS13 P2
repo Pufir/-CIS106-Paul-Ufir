@@ -1,0 +1,24 @@
+class student:
+  
+  def __init__(self, first, last, inout, credits):
+    self.first = first
+    self.last = last
+    self.credits = credits
+    self.inout = inout
+
+  def fullname(self):
+    return '{} {}'.format(self.first,self.last)
+
+  def price(self):
+    if self.inout == 'I':
+      return '$' + str(self.credits * 250)
+    elif self.inout == 'O':
+      return '$' + str(self.credits * 500)
+      
+stu_1 = student('Paul','Ufir','I',4)
+stu_2 = student('John','Doe','O',3)
+stu_3 = student('Sam','Smith','I',5)
+
+print('{} has a total price of: {}.'.format(student.fullname(stu_1),  student.price(stu_1)))
+print('{} has a total price of: {}.'.format(student.fullname(stu_2),  student.price(stu_2)))
+print('{} has a total price of: {}.'.format(student.fullname(stu_3),  student.price(stu_3)))

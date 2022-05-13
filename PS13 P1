@@ -1,0 +1,22 @@
+class Employee: 
+  def __init__(self,first,last,pay,rate):
+    self.first = first
+    self.last = last
+    self.pay = pay
+    self.rate = rate
+    self.email = first + "." + last +"@gmail.com"
+
+  def fullname(self):
+    return'{} {}'.format(self.first, self.last)
+
+  def bonus(self):
+    return '${}'.format(int(self.rate) * int(self.pay))
+   
+
+emp_1 = Employee("Corey","Schafer",50000, 20)
+emp_2 = Employee("Test", "User", 60000, 25)
+emp_3 = Employee("Paul", "Ufir", 75000, 30)
+
+print('{} has a bonus of {}.'.format(Employee.fullname(emp_1),Employee.bonus(emp_1)))
+print('{} has a bonus of {}.'.format(Employee.fullname(emp_2),Employee.bonus(emp_2)))
+print('{} has a bonus of {}.'.format(Employee.fullname(emp_3),Employee.bonus(emp_3)))
